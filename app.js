@@ -17,7 +17,7 @@ var restaurantRoutes = require("./routes/restaurants");
 var indexRoutes = require("./routes/index");
 
 //mongoose.connect("mongodb://localhost/sushi_haven",{useNewUrlParser: true});//connects to db(creates a db if not present)
-mongoose.connect("mongodb+srv://sahithi_03:mongodbatlas@123@cluster0-yoonv.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://sahithi_03:mongodbatlas%40123@cluster0-yoonv.mongodb.net/test?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useCreateIndex: true
 }).then(() => {
