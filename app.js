@@ -16,7 +16,16 @@ var commentRoutes = require("./routes/comments");
 var restaurantRoutes = require("./routes/restaurants");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/sushi_haven",{useNewUrlParser: true}); //connects to db(creates a db if not present)
+//mongoose.connect("mongodb://localhost/sushi_haven",{useNewUrlParser: true});//connects to db(creates a db if not present)
+mongoose.connect("mongodb+srv://sahithi_03:mongodbatlas@123@cluster0-yoonv.mongodb.net/test?retryWrites=true&w=majority",{
+    useNewUrlParser: true,
+    useCreateIndex: true
+}).then(() => {
+    console.log("connected to db");
+}).catch(err => {
+    console.log("ERROR", err.message);
+});
+
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
