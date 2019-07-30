@@ -24,5 +24,5 @@ All the required libraries and versions used are listed in the package.json file
    - One cannot add or edit a restaurant added by others
    - One cannot add or edit comments written by other users
 #### Google maps
-   - Google maps geocoding feature to display the google map for the address added by the user.
+   - Google maps geocoding feature to display google maps for the address added by the user.
    
