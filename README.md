@@ -26,3 +26,4 @@ All the required libraries and versions used are listed in the package.json file
 #### Google maps
    - Google maps geocoding feature to display google maps for the address added by the user.
    
+Link to view project - https://quiet-hollows-36766.herokuapp.com/
