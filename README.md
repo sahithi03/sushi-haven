@@ -14,11 +14,15 @@ This is a node.js web application for sushi lovers around world to share their f
 * passport.js for handling authentication logic
 
 
-### Features
-
-* Authentication 
+All the required libraries and versions used are listed in the package.json file under dependencies
+## Features
+#### Authentication 
    - User login and password
    - Admin code for admin privileges
+#### Authorization
+   - One cannot add or edit a restaurant without being authenticated
+   - One cannot add or edit a restaurant added by others
+   - One cannot add or edit comments written by other users
+#### Google maps
+   - Google maps geocoding feature to display the google map for the address added by the user.
    
-* Authorization
-   -
